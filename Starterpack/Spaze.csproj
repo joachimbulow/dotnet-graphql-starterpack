@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3da5f8a5-7601-4bcf-a799-1baabbf66e73</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="GraphQL.Client" Version="5.1.1" />
+    <PackageReference Include="GraphQL.Server.Ui.Voyager" Version="7.2.0" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.2" />
+    <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="13.0.2" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);CS8618</NoWarn> <!--"No
+    value for classes"-->
+    <NoWarn>$(NoWarn);SA1200</NoWarn> <!-- "All using directives must be places" -->
+    <NoWarn>$(NoWarn);SA1101</NoWarn> <!-- "Forced to use "this." prefix" -->
+    <NoWarn>$(NoWarn);SA1633</NoWarn> <!-- "File header missing" -->
+    <NoWarn>$(NoWarn);SA1309</NoWarn> <!-- "Field should not begin with underscore" -->
+    <NoWarn>$(NoWarn);SA1309</NoWarn> <!-- "Field should not begin with underscore" -->
+    <NoWarn>$(NoWarn);SA0001</NoWarn> <!-- XML comment analysis disabled" -->
+    <NoWarn>$(NoWarn);AD0001</NoWarn> <!-- XML comment analysis disabled" -->
+    <NoWarn>$(NoWarn);SA1000</NoWarn> <!-- "new should be followed by a space" -->
+
+  </PropertyGroup>
+</Project>
