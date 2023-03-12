@@ -36,7 +36,7 @@ In these chpaters i will glance over what is important to understand to get buil
 
 General overview of backend programming domain
 
-![alt text](https://github.com/joachimbulow/dotnet-graphql-starterpack/domain.png?raw=true)
+![alt text](https://github.com/joachimbulow/dotnet-graphql-starterpack/blob/master/domain.png?raw=true)
 
 ### Authentication
 
