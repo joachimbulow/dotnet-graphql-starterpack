@@ -35,7 +35,7 @@ In these chpaters i will glance over what
 ###
 
 General overview of backend programming domain
-INSRRT IMAGE HERE
+![alt text](https://github.com/joachimbulow/dotnet-graphql-starterpack/domain.png?raw=true)
 
 ### Authentication
 
@@ -105,7 +105,6 @@ Your queries will have to look like this to query the errors:
             }
         }
     }
-
 
 ### Integration testing
 
