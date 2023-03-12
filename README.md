@@ -30,11 +30,12 @@ Features:
 
 This project was developed using `dotnet version 7.0.1` .
 It proposes a starting point for a `Hot Chocolate 13 GraphQL` server using the power of `asp-net core`.
-In these chpaters i will glance over what
+In these chpaters i will glance over what is important to understand to get building.
 
 ###
 
 General overview of backend programming domain
+
 ![alt text](https://github.com/joachimbulow/dotnet-graphql-starterpack/domain.png?raw=true)
 
 ### Authentication
@@ -57,7 +58,7 @@ Furthermore, we sign using a secret using:
 
 Then of course a `RefreshTokenEntity` is generated in `/Auth/Persistence/Entities`. This is used to refresh users' tokens.
 
-Other than, the main auth code is as siple as possible and shoul be easily followed in `/Auth/Services`
+Other than, the main auth code is as simple as possible and should be easily followed in `/Auth/Services`
 
 ### Error handling
 
