@@ -84,6 +84,7 @@ Also queries become quite complex. Which is a bit unfortunate.
 
 Your queries will have to look like this to query the errors:
 
+```graphql
      mutation Login($input: LoginInput!) {
             login(input: $input) {
                 tokensModel {
@@ -106,6 +107,7 @@ Your queries will have to look like this to query the errors:
             }
         }
     }
+```
 
 ### Integration testing
 
